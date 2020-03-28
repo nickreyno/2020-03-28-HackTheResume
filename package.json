@@ -1,4 +1,4 @@
-{
+{"homepage": "http://nickreyno.github.io/2020-03-28-HackTheResume",
   "name": "nick-reyno-resume-builder",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages run -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
